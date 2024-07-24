@@ -1,1 +1,1 @@
-# serverless-movies-api
+# Serverless Movies API
