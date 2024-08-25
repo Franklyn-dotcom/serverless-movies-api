@@ -1,8 +1,8 @@
 import boto3
-import serverless
+import main
 
 # serverless.movie_data contains a list of movies
-list_search = serverless.movie_data
+list_search = main.movie_data
 
 # Initialize DynamoDB client
 db_client = boto3.client('dynamodb')
