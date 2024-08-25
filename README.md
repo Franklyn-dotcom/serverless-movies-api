@@ -32,7 +32,7 @@ After installing the AWS CLI, You need to configure your AWS CLI to enable you t
 
 `aws configure`
 
-![aws-configure](aws-configure.png)
+![aws-configure](/serverless-movies-api/images/aws-configure.png)
 
 ## Step 3: Create a virtual environment(venv)
 
