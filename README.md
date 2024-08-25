@@ -49,7 +49,7 @@ After creating your virtual environment, you need to activate your virtual envir
 
 `venv/Scripts/activate.bat`
 
-![venv-activate](venv-activate-full-1.png)
+![venv-activate](/serverless-movies-api/images/venv-activate-full-1.PNG)
 
 ## Step 4: Create Python files
 
@@ -408,27 +408,27 @@ python main.py
 
 After running your application, navigate to your AWS console and search for S3, Dynamodb, and Lambda services to see your services in creation.
 
-![s3-aws-console](/serverless-movies-api/images/s3.png)
+![s3-aws-console](/serverless-movies-api/images/s3.PNG)
 
-![s3-aws-console](/serverless-movies-api/images/s3-obj.png)
+![s3-aws-console](/serverless-movies-api/images/s3-obj.PNG)
 
-![dynamodb-console](/serverless-movies-api/images/dynamo.png)
+![dynamodb-console](/serverless-movies-api/images/dynamo.PNG)
 
-![dynamodb-console](/serverless-movies-api/images/dynamo-item.png)
+![dynamodb-console](/serverless-movies-api/images/dynamo-item.PNG)
 
-![lambda-console](/serverless-movies-api/images/lambda-service.png)
+![lambda-console](/serverless-movies-api/images/lambda-service.PNG)
 
 ## Step 5: Testing the application using Lambda function event
 
 Now, you need to test your application using the lambda function event. In your AWS console, navigate to your Lambda service console.
 
-![lambda-console](/serverless-movies-api/images/lambda-service.png)
+![lambda-console](/serverless-movies-api/images/lambda-service.PNG)
 
 To test your Lambda function, click on the test button to create a new test event:
 
-![test-button](/serverless-movies-api/images/dynamo-test.png)
+![test-button](/serverless-movies-api/images/dynamo-test.PNG)
 
-![create-event](/serverless-movies-api/images/save-test.png)
+![create-event](/serverless-movies-api/images/save-test.PNG)
 
 click on save to save the event.
 
@@ -450,17 +450,17 @@ After creating the event, click on the test button to test your application. You
 
 After testing your application, you need to create an API Gateway trigger function. To create an API gateway trigger, click on the add trigger button and select the API gateway source in your AWS lambda service.
 
-![trigger-function](/serverless-movies-api/images/lamda-trigger.png)
+![trigger-function](/serverless-movies-api/images/lamda-trigger.PNG)
 
 After selecting the API gateway source, click on Create New API gateway, select the HTTP API type, select Open for the security, and click on the Create button to create the API Gateway trigger.
 
-![select-source-api](/serverless-movies-api/images/select-source.png)
+![select-source-api](/serverless-movies-api/images/select-source.PNG)
 
-![api-gateway](/serverless-movies-api/images/api-gateway.png)
+![api-gateway](/serverless-movies-api/images/api-gateway.PNG)
 
 After creating your API Gateway, you will see your API Gateway URL.
 
-![api-gateway-url](/serverless-movies-api/images/api-click.png)
+![api-gateway-url](/serverless-movies-api/images/api-click.PNG)
 
 copy and paste the URL into your browser and you will see an output that looks like this:
 
