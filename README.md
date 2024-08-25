@@ -32,7 +32,7 @@ After installing the AWS CLI, You need to configure your AWS CLI to enable you t
 
 `aws configure`
 
-![aws-configure](/serverless-movies-api/images/aws-configure.PNG)
+![aws-configure](/images/aws-configure.PNG)
 
 ## Step 3: Create a virtual environment(venv)
 
@@ -49,15 +49,15 @@ After creating your virtual environment, you need to activate your virtual envir
 
 `venv/Scripts/activate.bat`
 
-![venv-activate](/serverless-movies-api/images/venv-activate-full-1.PNG)
+![venv-activate](/images/venv-activate-full-1.PNG)
 
 ## Step 4: Create Python files
 
-After creating and activating your virtual environment, you need to create two python files named **main.py** and **lambda.py**. You can use any name of your choice.
+After creating and activating your virtual environment, you need to create two Python files named **main.py** and **lambda.py**. You can use any name of your choice.
 
 The `main.py` will be used to handle the creation of your list of movies that contains the title, release year, cover image, and genre of the movies and automates the creation of an S3 bucket, DynamoDB table, and a Lambda function.
 
-The `lambda.py` will serve as the lambda handler that handles retrieving your movie data.
+The `lambda.py` will serve as the handler that retrieves your movie data.
 
 After creating the files, copy and paste the following code into the `main.py`:
 
@@ -408,27 +408,27 @@ python main.py
 
 After running your application, navigate to your AWS console and search for S3, Dynamodb, and Lambda services to see your services in creation.
 
-![s3-aws-console](/serverless-movies-api/images/s3.PNG)
+![s3-aws-console](/images/s3.PNG)
 
-![s3-aws-console](/serverless-movies-api/images/s3-obj.PNG)
+![s3-aws-console](/images/s3-obj.PNG)
 
-![dynamodb-console](/serverless-movies-api/images/dynamo.PNG)
+![dynamodb-console](/images/dynamo.PNG)
 
-![dynamodb-console](/serverless-movies-api/images/dynamo-item.PNG)
+![dynamodb-console](/images/dynamo-item.PNG)
 
-![lambda-console](/serverless-movies-api/images/lambda-service.PNG)
+![lambda-console](/images/lambda-service.PNG)
 
 ## Step 5: Testing the application using Lambda function event
 
 Now, you need to test your application using the lambda function event. In your AWS console, navigate to your Lambda service console.
 
-![lambda-console](/serverless-movies-api/images/lambda-service.PNG)
+![lambda-console](/images/lambda-service.PNG)
 
 To test your Lambda function, click on the test button to create a new test event:
 
-![test-button](/serverless-movies-api/images/dynamo-test.PNG)
+![test-button](/images/dynamo-test.PNG)
 
-![create-event](/serverless-movies-api/images/save-test.PNG)
+![create-event](/images/save-test.PNG)
 
 click on save to save the event.
 
@@ -450,21 +450,21 @@ After creating the event, click on the test button to test your application. You
 
 After testing your application, you need to create an API Gateway trigger function. To create an API gateway trigger, click on the add trigger button and select the API gateway source in your AWS lambda service.
 
-![trigger-function](/serverless-movies-api/images/lamda-trigger.PNG)
+![trigger-function](/images/lamda-trigger.PNG)
 
 After selecting the API gateway source, click on Create New API gateway, select the HTTP API type, select Open for the security, and click on the Create button to create the API Gateway trigger.
 
-![select-source-api](/serverless-movies-api/images/select-source.PNG)
+![select-source-api](/images/select-source.PNG)
 
-![api-gateway](/serverless-movies-api/images/api-gateway.PNG)
+![api-gateway](/images/api-gateway.PNG)
 
 After creating your API Gateway, you will see your API Gateway URL.
 
-![api-gateway-url](/serverless-movies-api/images/api-click.PNG)
+![api-gateway-url](/images/api-click.PNG)
 
 copy and paste the URL into your browser and you will see an output that looks like this:
 
-![output-2](/serverless-movies-api/images/output-2.PNG)
+![output-2](/images/output-2.PNG)
 
 ## Conclusion
 
